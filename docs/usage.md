@@ -21,9 +21,8 @@ the response body.
 
 ## Pushing changes
 
-Because this is a public repository, push every branch so collaborators can
-see the full history:
+Push your changes to the origin remote:
 
-git push origin --all
+git push origin HEAD
 
 Do not include secrets, passwords, or API keys in committed files.

@@ -43,16 +43,16 @@ Do not commit real credentials, secrets, passwords, or API keys.
 
 ## Project structure
 
-- README.md — project overview, getting started, and usage
-- docs/ — detailed documentation
-  - usage.md — how to create and push update responses
-  - getting-started.md — first steps and prerequisites
-  - project-structure.md — this repository layout
-- example/ — example files with inline comments
-  - README.md — description of the example files
-  - sample-update.txt — sample update response
-- LICENSE — MIT license text
-- .gitignore — files and folders ignored by git
+- README.md - project overview, getting started, and usage
+- docs/ - detailed documentation
+  - usage.md - how to create and push update responses
+  - getting-started.md - first steps and prerequisites
+  - project-structure.md - this repository layout
+- example/ - example files with inline comments
+  - README.md - description of the example files
+  - sample-update.txt - sample update response
+- LICENSE - MIT license text
+- .gitignore - files and folders ignored by git
 
 ## Contributing
 
