@@ -1,0 +1,14 @@
+# RetroWowUpdateResp sample update response
+# This file demonstrates the recommended format for an update response.
+# Lines beginning with '#' are comments intended for human readers.
+
+title: Winter 2026 refresh
+date: 2026-11-25
+status: applied
+
+Body:
+- Updated the retro color palette across all response templates.
+- Added the sample update response under example/.
+- Documented the project structure under docs/.
+
+# End of sample update response
