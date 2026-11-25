@@ -1,0 +1,11 @@
+{
+  "name": "retrowowupdateresp",
+  "version": "1.0.0",
+  "description": "RetroWowUpdateResp project repository",
+  "private": true,
+  "scripts": {
+    "start": "echo \"RetroWowUpdateResp: no start script configured\"",
+    "test": "echo \"No tests configured\""
+  },
+  "license": "MIT"
+}

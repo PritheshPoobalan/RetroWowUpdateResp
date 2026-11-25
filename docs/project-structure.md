@@ -4,17 +4,18 @@ This document describes the repository layout.
 
 ```
 RetroWowUpdateResp/
-+- README.md          # Project overview, getting started, and usage
-+- docs/              # Detailed documentation
-|   +- usage.md       # How to create and push update responses
-|   +- getting-started.md  # First steps and prerequisites
-|   +- project-structure.md  # This file
-+- example/           # Example files with inline comments
-|   +- README.md      # Description of the example files
-|   +- sample-update.txt     # Sample update response
-+- package.json       # Node manifest
-+- LICENSE            # MIT license text
-+- .gitignore         # Files and folders ignored by git
+├── README.md          # Project overview, getting started, and usage
+├── docs/              # Detailed documentation
+│   ├── usage.md       # How to create and push update responses
+│   ├── getting-started.md  # First steps and prerequisites
+│   └── project-structure.md  # This file
+├── example/           # Example files with inline comments
+│   ├── README.md      # Description of the example files
+│   ├── index.html     # Self-contained retro update-response page
+│   └── sample-update.txt     # Sample update response
+├── package.json       # Node manifest
+├── LICENSE            # MIT license text
+└── .gitignore         # Files and folders ignored by git
 ```
 
 ## Conventions

@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Retro Wow Update Response</title>
+<style>
+  :root {
+    --bg-color: #1a1a2e;
+    --surface-color: #252542;
+    --accent-color: #e94560;
+    --accent-hover: #ff6b81;
+    --text-color: #eaeaea;
+    --muted-color: #8888a0;
+    --border-color: #4a4a6e;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    padding: 24px;
+    font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.5;
+  }
+
+  .container {
+    max-width: 720px;
+    margin: 0 auto;
+  }
+
+  header {
+    padding-bottom: 32px;
+    border-bottom: 4px solid var(--border-color);
+    margin-bottom: 32px;
+  }
+
+  h1 {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 32px;
+    margin: 0 0 8px 0;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+
+  .tagline {
+    color: var(--muted-color);
+    margin: 0;
+    font-size: 16px;
+  }
+
+  .update-card {
+    background-color: var(--surface-color);
+    border: 2px solid var(--border-color);
+    border-radius: 4px;
+    padding: 24px;
+    margin-bottom: 32px;
+  }
+
+  .update-meta {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 12px;
+    color: var(--muted-color);
+    margin: 0 0 12px 0;
+  }
+
+  .update-body {
+    font-size: 18px;
+    margin: 0;
+  }
+
+  .responses {
+    margin-bottom: 32px;
+  }
+
+  .responses h2,
+  .form h2 {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 20px;
+    margin: 0 0 16px 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  .response {
+    background-color: var(--surface-color);
+    border: 2px solid var(--border-color);
+    border-radius: 4px;
+    padding: 16px;
+    margin-bottom: 12px;
+  }
+
+  .response-author {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 14px;
+    color: var(--accent-color);
+    margin: 0 0 6px 0;
+  }
+
+  .response-text {
+    margin: 0;
+    font-size: 16px;
+  }
+
+  .form {
+    background-color: var(--surface-color);
+    border: 2px solid var(--border-color);
+    border-radius: 4px;
+    padding: 24px;
+    display: none;
+  }
+
+  .form.visible {
+    display: block;
+  }
+
+  label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 6px;
+    color: var(--muted-color);
+  }
+
+  input[type="text"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 16px;
+    background-color: var(--bg-color);
+    border: 1px solid var(--border-color);
+    color: var(--text-color);
+    font-family: inherit;
+    font-size: 16px;
+    border-radius: 3px;
+  }
+
+  input[type="text"]:focus,
+  textarea:focus {
+    outline: 2px solid var(--accent-color);
+    border-color: transparent;
+  }
+
+  button {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 16px;
+    background-color: var(--accent-color);
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background-color: var(--accent-hover);
+  }
+
+  button:active {
+    transform: translateY(1px);
+  }
+
+  #toggle-form {
+    background-color: transparent;
+    border: 2px solid var(--border-color);
+    color: var(--text-color);
+    margin-bottom: 16px;
+  }
+
+  #toggle-form:hover {
+    background-color: var(--surface-color);
+  }
+
+  .message {
+    margin-top: 16px;
+    font-size: 14px;
+    color: var(--muted-color);
+    min-height: 20px;
+  }
+
+  @media (max-width: 600px) {
+    body {
+      padding: 16px;
+    }
+
+    h1 {
+      font-size: 24px;
+    }
+
+    .update-card,
+    .form {
+      padding: 16px;
+    }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <h1>Retro Wow</h1>
+    <p class="tagline">Update response showcase - retro computing aesthetic</p>
+  </header>
+
+  <article class="update-card">
+    <p class="update-meta">STATUS UPDATE | 2026-11-25</p>
+    <p class="update-body">System status: all channels nominal. New retro theme deployed across the update feed. Welcome to the response showcase.</p>
+  </article>
+
+  <section class="responses">
+    <h2>Responses</h2>
+    <div id="response-list">
+      <div class="response">
+        <p class="response-author">User one</p>
+        <p class="response-text">Great update, love the retro look.</p>
+      </div>
+      <div class="response">
+        <p class="response-author">User two</p>
+        <p class="response-text">The chunky buttons bring back memories.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="form" id="response-form">
+    <h2>Add a response</h2>
+    <form id="response-form-el">
+      <label for="author-name">Your name</label>
+      <input type="text" id="author-name" placeholder="Enter your name" required>
+
+      <label for="response-message">Your response</label>
+      <textarea id="response-message" rows="4" placeholder="Share your thoughts..." required></textarea>
+
+      <button type="submit">Submit response</button>
+    </form>
+    <p id="submit-message" class="message"></p>
+  </section>
+
+  <button id="toggle-form">Share a response</button>
+</div>
+
+<script>
+  (function () {
+    var toggleButton = document.getElementById('toggle-form');
+    var form = document.getElementById('response-form');
+    var formEl = document.getElementById('response-form-el');
+    var responseList = document.getElementById('response-list');
+    var submitMessage = document.getElementById('submit-message');
+
+    toggleButton.addEventListener('click', function () {
+      var visible = form.classList.contains('visible');
+      if (visible) {
+        form.classList.remove('visible');
+        toggleButton.textContent = 'Share a response';
+      } else {
+        form.classList.add('visible');
+        toggleButton.textContent = 'Hide form';
+        document.getElementById('author-name').focus();
+      }
+    });
+
+    formEl.addEventListener('submit', function (event) {
+      event.preventDefault();
+
+      var author = document.getElementById('author-name').value.trim();
+      var message = document.getElementById('response-message').value.trim();
+
+      if (!author || !message) {
+        return;
+      }
+
+      var response = document.createElement('div');
+      response.className = 'response';
+      response.innerHTML = '<p class="response-author">' + escapeHtml(author) + '</p>' +
+        '<p class="response-text">' + escapeHtml(message) + '</p>';
+
+      responseList.appendChild(response);
+
+      formEl.reset();
+      form.classList.remove('visible');
+      toggleButton.textContent = 'Share a response';
+
+      submitMessage.textContent = 'Response submitted successfully.';
+      setTimeout(function () {
+        submitMessage.textContent = '';
+      }, 4000);
+    });
+
+    function escapeHtml(text) {
+      var div = document.createElement('div');
+      div.textContent = text;
+      return div.innerHTML;
+    }
+  })();
+</script>
+</body>
+</html>
