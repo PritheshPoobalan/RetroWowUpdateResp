@@ -75,3 +75,8 @@ This project is released under the MIT License. See LICENSE for details.
 
 Improved project documentation for RetroWowUpdateResp (entry 1, 2026-11-25T08:04:32Z).
 - Clarified repository structure and purpose.
+
+## Documentation update 4
+
+Improved project documentation for RetroWowUpdateResp (entry 4, 2026-11-25T08:04:32Z).
+- Clarified repository structure and purpose.
