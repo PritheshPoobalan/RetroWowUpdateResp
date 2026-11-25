@@ -70,3 +70,8 @@ free of emojis because this is a public repository.
 ## License
 
 This project is released under the MIT License. See LICENSE for details.
+
+## Documentation update 1
+
+Improved project documentation for RetroWowUpdateResp (entry 1, 2026-11-25T08:04:32Z).
+- Clarified repository structure and purpose.
