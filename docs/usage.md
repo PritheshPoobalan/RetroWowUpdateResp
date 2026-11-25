@@ -11,11 +11,11 @@ include:
 - A title line at the top.
 - A date in YYYY-MM-DD format.
 - A body describing what changed.
-- An optional status field, for example `status: applied` or `status: pending`.
+- An optional status field, for example status: applied or status: pending.
 
 ## Example file with inline comments
 
-See example/sample-update.txt. It uses `#` comment lines to explain each
+See example/sample-update.txt. It uses # comment lines to explain each
 section. Comments are for humans and are ignored by any tooling that parses
 the response body.
 

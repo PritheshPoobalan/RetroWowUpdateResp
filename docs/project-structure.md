@@ -7,9 +7,12 @@ RetroWowUpdateResp/
 ├── README.md          # Project overview, getting started, and usage
 ├── docs/              # Detailed documentation
 │   ├── usage.md       # How to create and push update responses
+│   ├── getting-started.md  # First steps and prerequisites
 │   └── project-structure.md  # This file
-└── example/           # Example files with inline comments
-    └── sample-update.txt     # Sample update response
+├── example/           # Example files with inline comments
+│   ├── README.md      # Description of the example files
+│   └── sample-update.txt     # Sample update response
+└── ...                # Project source files (add as the project grows)
 ```
 
 ## Conventions

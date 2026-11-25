@@ -1,13 +1,19 @@
 # RetroWowUpdateResp
 
 RetroWowUpdateResp is a repository for handling retro-styled update responses.
+It provides a minimal, documented structure for creating, reviewing, and
+versioning update response files. It is intended as a starting point for teams
+that generate, review, or ship response payloads and want a consistent,
+documented structure to build on.
 
-## Overview
+## Features
 
-This repository holds the source and documentation for RetroWowUpdateResp, a
-project that manages update responses with a retro appearance. It is intended
-as a starting point for teams that generate, review, or ship response payloads
-and want a consistent, documented structure to build on.
+- Plain-text update response format with title, date, status, and body fields
+- Human-readable comment lines (lines beginning with #)
+- Example file under example/ to copy when creating new responses
+- Documented project structure and usage conventions under docs/
+- No build step, no special runtime, and no dependencies required
+- Conventional commit guidance and a pull-request workflow for contributions
 
 ## Getting started
 
@@ -16,26 +22,37 @@ Clone the repository:
 git clone https://github.com/PritheshPoobalan/RetroWowUpdateResp.git
 cd RetroWowUpdateResp
 
-No build step or special runtime is required to use the repository as-is.
+No build step or package installation is required. The repository contains
+plain text files and Markdown documentation only.
 
 ## Usage
 
-1. Add your update-response files under the example/ directory or your own
-   project folders.
-2. Review the documentation under docs/ for format conventions.
-3. Commit changes with a conventional commit type, for example:
+1. Copy example/sample-update.txt to a new file for your update response.
+2. Replace the title, date, status, and body with your own values.
+3. Review docs/usage.md for format conventions and
+   docs/project-structure.md for the repository layout.
+4. Commit changes with a conventional commit type, for example:
 
    git commit -m "docs: add example update response"
 
-4. Push all branches to the origin remote:
+5. Push changes to the origin remote:
 
-   git push origin --all
+   git push origin HEAD
+
+Do not commit real credentials, secrets, passwords, or API keys.
 
 ## Project structure
 
-- README.md — project overview and usage instructions
-- docs/ — detailed project documentation
+- README.md — project overview, getting started, and usage
+- docs/ — detailed documentation
+  - usage.md — how to create and push update responses
+  - getting-started.md — first steps and prerequisites
+  - project-structure.md — this repository layout
 - example/ — example files with inline comments
+  - README.md — description of the example files
+  - sample-update.txt — sample update response
+- LICENSE — MIT license text
+- .gitignore — files and folders ignored by git
 
 ## Contributing
 
@@ -43,7 +60,13 @@ Contributions are welcome. Open an issue to propose a change, then submit a
 pull request against the main branch. Keep commit messages conventional and
 free of emojis because this is a public repository.
 
+1. Fork the repository.
+2. Create a feature branch from main.
+3. Make your changes.
+4. Commit with a conventional commit message (for example docs:, feat:,
+   fix:, chore:).
+5. Open a pull request against the main branch.
+
 ## License
 
-This repository does not currently specify a license. Add a LICENSE file when
-one is chosen.
+This project is released under the MIT License. See LICENSE for details.
